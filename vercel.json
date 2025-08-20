@@ -1,9 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "outputDirectory": "public"
+  "builds": [{ "src": "public/**/*", "use": "@vercel/static" }],
+  "outputDirectory": "public",
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
